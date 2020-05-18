@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CourseCell" customModule="AANetworkProvider" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="211" height="310"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="211" height="310"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qkb-QF-ddn">
+                        <rect key="frame" x="0.0" y="0.0" width="211" height="310"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="NAo-uU-99K">
+                                <rect key="frame" x="10" y="4" width="191" height="302"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ejf-zf-iE4" customClass="CustomView" customModule="AANetworkProvider" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="191" height="212"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yRV-DQ-Qgc">
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="212"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="yRV-DQ-Qgc" secondAttribute="bottom" id="7f4-Yn-Q1M"/>
+                                            <constraint firstItem="yRV-DQ-Qgc" firstAttribute="leading" secondItem="Ejf-zf-iE4" secondAttribute="leading" id="Orf-Sz-crg"/>
+                                            <constraint firstItem="yRV-DQ-Qgc" firstAttribute="top" secondItem="Ejf-zf-iE4" secondAttribute="top" id="ZNz-LM-cMG"/>
+                                            <constraint firstAttribute="trailing" secondItem="yRV-DQ-Qgc" secondAttribute="trailing" id="syX-xe-lRS"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="248" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="748" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jNA-On-aZo">
+                                        <rect key="frame" x="0.0" y="224" width="191" height="78"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="248" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="748" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="60k-Kp-3F7">
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Ytv-eG-bT0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
+                                                <color key="textColor" name="course_cell_title"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="747" verticalCompressionResistancePriority="747" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvy-Qk-Bc1">
+                                                <rect key="frame" x="0.0" y="60" width="191" height="18"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="m9i-at-9cg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="13"/>
+                                                <color key="textColor" name="course_cell_desc"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="main_bg"/>
+                        <constraints>
+                            <constraint firstItem="NAo-uU-99K" firstAttribute="top" secondItem="qkb-QF-ddn" secondAttribute="top" constant="4" id="KcR-9C-ms8"/>
+                            <constraint firstAttribute="trailing" secondItem="NAo-uU-99K" secondAttribute="trailing" constant="10" id="nQy-ki-RxV"/>
+                            <constraint firstAttribute="bottom" secondItem="NAo-uU-99K" secondAttribute="bottom" constant="4" id="nyd-yU-iiT"/>
+                            <constraint firstItem="NAo-uU-99K" firstAttribute="leading" secondItem="qkb-QF-ddn" secondAttribute="leading" constant="10" id="ui5-rn-1At"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="qkb-QF-ddn" secondAttribute="bottom" id="0z5-Xe-wll"/>
+                <constraint firstItem="qkb-QF-ddn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="H4x-Se-1UL"/>
+                <constraint firstItem="qkb-QF-ddn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VXg-KW-ggG"/>
+                <constraint firstAttribute="trailing" secondItem="qkb-QF-ddn" secondAttribute="trailing" id="vex-66-8M5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="211" height="310"/>
+            <connections>
+                <outlet property="courseImage" destination="yRV-DQ-Qgc" id="ZEY-sx-4tO"/>
+                <outlet property="imageContainer" destination="Ejf-zf-iE4" id="Rac-q5-8Wu"/>
+                <outlet property="lblDesc" destination="Gvy-Qk-Bc1" id="tMG-Dz-ceN"/>
+                <outlet property="lblTitle" destination="60k-Kp-3F7" id="l7v-sl-TWE"/>
+            </connections>
+            <point key="canvasLocation" x="7.9710144927536239" y="145.3125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="course_cell_desc">
+            <color red="0.58431372549019611" green="0.59607843137254901" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="course_cell_title">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="main_bg">
+            <color red="0.13725490196078433" green="0.15294117647058825" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
